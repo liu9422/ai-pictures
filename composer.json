@@ -1,0 +1,25 @@
+{
+    "name": "liu9422/ai-pictures",
+    "description": "ERNIE-ViLG AI作画的php客户端",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "ERNIE-ViLG",
+        "AI"
+    ],
+    "autoload": {
+        "psr-4": {
+            "AiPictures\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "liu9422",
+            "email": "liuchengjun0940222@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*",
+    }
+}
