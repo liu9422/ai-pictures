@@ -44,7 +44,7 @@ class Creator
     public function create($text, $resolution, $style, $accessToken)
     {
         $body = $this->post(
-            'https://aip.baidubce.com/rpc/2.0/ernievilg/v1/txt2img?' . $accessToken,
+            'https://aip.baidubce.com/rpc/2.0/ernievilg/v1/txt2img?access_token=' . $accessToken,
             [
                 'text' => $text,
                 'resolution' => $resolution,
@@ -64,7 +64,7 @@ class Creator
     public function result($taskId, $accessToken)
     {
         $body = $this->post(
-            'https://aip.baidubce.com/rpc/2.0/ernievilg/v1/getImg?' . $accessToken,
+            'https://aip.baidubce.com/rpc/2.0/ernievilg/v1/getImg?access_token=' . $accessToken,
             [
                 'taskId' => $taskId,
             ]
